@@ -1,0 +1,382 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="C:/Users/ASUS/Desktop/sample/assignments/boots.html/bootstrap-3.3.7-dist/css/bootstrap.css">
+<style>
+
+ #background
+{
+background-color:#4867aa;
+}
+#abcd
+{
+	background-color:#d8dfea;
+}
+
+#logo
+{
+margin-left:100px;
+}
+#form
+{
+position: fixed;
+margin-left:850px;
+margin-top:-100px;
+}
+#img
+{
+ position: fixed;
+ margin-left:50px;
+ margin-top: 25px;
+}
+
+#regform
+{
+  position:fixed;
+  margin-left:850px;
+  margin-top:-390px;
+}
+.container
+{
+	width:1600px;
+	margin-left:-50px;
+
+}
+.p
+{
+	color: red;
+	position: absolute;
+	top: 50px;
+	margin: 7px;
+}
+.s
+{
+	color: red;
+	position: absolute;
+	top: 50px;
+	margin: 7px;
+	right:130;
+
+}
+.uname
+{
+	
+	color: red;
+position: absolute;
+left: -160px;
+}
+.lalname
+{
+	color: red;
+position: absolute;
+right: 45px;
+top: 100px;
+
+}
+.ph
+{
+	color: red;
+position: absolute;
+left: -110px;
+}
+.pa
+{
+	color: red;
+position: absolute;
+left: -150px;
+}
+.e
+{
+	color: red;
+position: absolute;
+left: -120px;
+}
+.dys
+{
+	color:red;
+	position: absolute;
+left: -120px;
+	
+}
+.fm
+{
+	color:red;
+
+</style>
+
+<script>
+$(document).ready(function(){
+//$(".error").hide();
+$("#btnlogin").click(function(){
+	var username=$("#email").val();
+	var password=$("#pwd").val();
+	//alert(username);
+	if(username=="")
+	{
+		$("#unerror").text("Input Not Valid");
+
+	}
+	if(password=="")
+	{
+		$("#pserror").text("Input Not Valid");
+	}
+	else if(password.length<=8)
+	{
+		$("#pserror").text("Min 8 Digits");
+	}
+	else
+	{
+		$("#pserror").text("");
+	}
+
+});
+
+$("#account").click(function()
+{
+var firstname=$("#uname").val();
+	
+	//alert(firstname);
+
+	if(firstname=="")
+	{
+		$("#fname").text(" Enter your First Name");
+	}
+	else
+	{
+		$("#fname").text("");
+	}
+var lastname=$("#lname").val();
+//alert(lastname);
+	
+	if(lastname=="")
+	{
+		$("#laname").text("Enter your Last  Name");
+	}
+	else
+	{
+		$("#laname").text("");
+	}
+var Mobilenumber=$("#number").val();
+	if(Mobilenumber=="")
+	{
+		$("#pheno").text("Enter U R No");
+	}
+	else if(/^[a-zA-Z]+$/.test(Mobilenumber))
+	{
+		$("#pheno").text("Not Valid");
+	}
+	else
+	{
+		$("#pheno").text("");
+	}
+
+var email=$("#mail").val();
+
+	var atpos = email.indexOf("@");
+    var dotpos = email.lastIndexOf(".");
+	
+	if(atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+	
+	{
+		//alert(email);
+		$("#ema").text("Not Valid Gmail");
+	}
+	
+	else
+	{
+		$("#ema").text("");
+		
+	}
+
+var password=$("#psw").val();
+	//alert(password);
+
+	if(password=="")
+
+	{
+		$("#paswd").text("Enter U R Password");
+	}
+
+	else
+	{
+		$("#paswd").text("");
+	}
+var date=$("#Day").val();
+var month=$("#Month").val();
+var year=$("#Year").val();
+if(date==""||month==""||year=="")
+	{
+	$("#dys").text("Select U R DOB");
+
+	}
+else
+	{
+	$("#dys").text("");
+	}
+var gender=$("#gender:checked").val()?true:false;
+if(gender==false)
+	{
+	$("#fm").text("Plz Select U R gender");
+	}
+else{
+	$("#fm").text("");
+}
+
+
+});
+
+
+
+
+
+});
+
+
+
+
+</script>
+</head>
+
+<body id="abcd">
+
+
+
+	<div class="container-fluid">
+	 	<div id="background">
+			<div class="row">
+				 <div id="logo.png">
+	 				<div  class="col-xs-12 col-md-6 col-lg-2">
+	 					 <img src="facebook.jpg" width="250" >
+	 				 </div>
+	  			</div>
+	 		 </div>
+	 	 </div>
+	 	 </div>
+	 </div>
+	 <div>
+		<form class="form-inline">
+			<div class="form-group">
+				<div class="row">
+					 <div  class="col-xs-12 col-md-6 col-lg-2">
+		 				<div id="form">
+		 				<p id="unerror" class="p"></p>
+		 				<p id="pserror" class="s"></p>
+							<label  for="email"><font color="white">Email</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<label for="pwd"><font color="white">Password</font></label><br>
+     						<input  type="email" class="form-control" id="email"><label id="lblemail"></label>
+      						<input type="password" class="form-control" id="pwd">
+      						<button type="button" class="btn btn-primary" id="btnlogin">Login</button><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" >Forgotten password</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<div class="row">
+		<div  class="col-xs-12 col-md-6 col-lg-2">
+		 	<div id="img.jpg">
+		 		<h3>Connect with friends and the world around you on <br>facebook</h3><br> 
+    			<img src="fbb.jpg" height="50%" width="40%">
+   			 </div>
+    	</div>
+    </div>
+		<div class="form-group">
+			<div class="row">
+				<div  class="col-xs-12 col-md-6 col-lg-2">
+		 			<div id="regform">
+   						<b><font size="6">Create an account </font><br></b><br>
+   						<b><font size="4">It's free and always will be</font><br></b><br>
+						 <label id="fname" class="uname"></label><input type="text" id="uname" placeholder="First Name" size="20" maxlength="10" >
+						  
+						 <input type="text" id="lname" placeholder="Last Name" size="20" maxlength="10"><br><br>
+						 <label id="laname" class="lalname"></label>
+						 <label id="pheno" class="ph"></label><input type="text" id="number" placeholder="Mobile Number" size="47" maxlength="10" ><br><br>
+						 <label id="ema" class="e"></label><input type="text" id="mail" placeholder="Email" size="47"  maxlength="30" ><br><br>
+						 <label id="paswd" class="pa"></label><input type="password" id="psw" placeholder="Password" size="47" maxlength="10">
+						 <h3>Birthday</h3>
+						 <label id="dys" class="dys"></label>
+						
+						<select id="Day" >		
+							   <option value="">Date</option>
+						        <option value="sun">Sunday</option>
+						        <option value="mon">Monday</option>
+						        <option value="tue">Tuesday</option>
+						        <option value="wed">Wednesday</option>
+						        <option value="thu">Thursday</option>
+						        <option value="fri">Friday</option>
+						        <option value="sat">Saturday</option>
+						    </select>
+						      <select id="Month">
+						        <option value="">Month</option>
+						        <option value="jan">Jan</option>
+						        <option value="feb">feb</option>
+						        <option value="march">March</option>
+						        <option value="april">april</option>
+						        <option value="may">may</option>
+						        <option value="june">june</option>
+						        <option value="july">july</option>
+						    </select>
+						      <select id="Year">
+						        <option value="">Year</option>
+						        <option value="90">1990</option>
+						        <option value="91">1991</option>
+						        <option value="92">1992</option>
+						        <option value="93">1993</option>
+						        <option value="94">1994</option>
+						        <option value="89">1989</option>
+						        <option value="88">1988</option>
+						    </select>
+						    <font size="2" color="blue">Why do I need to provide my date of birth</font> <br><br>
+							<input type="Radio" id="gender" value="female"> Female
+							<input type="Radio" name="gender" value="male"> Male <label id="fm" class="fm"></label><br><br>
+							<font size="2" color="grey">By Clicking Create an account,you agree to our <a href="#">Terms </a> </font><br>
+							<font size="2" color="grey">and that you have read our <a href="#"> Data Policy</a>,including our cookie use</font> <br>
+							<hr>
+							<input type="submit"   value="Create an account" id="account" align="center" style="color:white; background-color:green;button-radius:6px"></td>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</form>			
+</div>
+</div>
+</body>
+</html>
+
+	
+
+		
+		
+				
+			
+		
+	
+							    
+					
+				
+					
+
+							    
+
+							    
+
+
+      
+
+    
+					
+					
+   
+   
+
+
+
+					
+
+
+	
+	
