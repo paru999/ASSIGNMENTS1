@@ -65,16 +65,16 @@ public class contractemployee extends employee1 implements promotionalOffers14
 	public void seasonOffer(int totalPurchaseAmount)
 	{
 
-		totalPurchaseAmount=totalPurchaseAmount-totalPurchaseAmount*15/100;
-		System.out.println("15% of purchase:"+totalPurchaseAmount);
+		totalPurchaseAmount=totalPurchaseAmount*25/100;
+		System.out.println("25% of purchase:"+totalPurchaseAmount);
 		
 		
 	}
 	@Override
 	public void regularoffer(int amount) 
 	{
-		amount=amount-amount*8/100;
-		System.out.println("8% of purchase:"+amount);
+		amount=amount*10/100;
+		System.out.println("10% of purchase:"+amount);
 		
 	}
 }
