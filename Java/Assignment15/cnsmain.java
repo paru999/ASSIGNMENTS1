@@ -21,9 +21,9 @@ public class cnsmain
 		cndr.Getphno();
 		cndr.setgnr("Female");
 		cndr.Getgnr();*/
-		cndr.seasonOffer(2500);
+		cndr.seasonOffer(200);
 		
-		cndr.regularoffer(2500);
+		cndr.regularoffer(500);
 		
 		cndr.disp();
 		
