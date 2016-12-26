@@ -58,15 +58,15 @@ public class PermanantEmployee  extends employee1  implements promotionalOffers1
 	@Override
 	public void seasonOffer(int totalPurchaseAmount) 
 	{
-		totalPurchaseAmount=totalPurchaseAmount*10/100;
-		System.out.println("10% of purchase:"+totalPurchaseAmount);
+		totalPurchaseAmount=totalPurchaseAmount*25/100;
+		System.out.println("25% of purchase:"+totalPurchaseAmount);
 		
 	}
 	@Override
 	public void regularoffer(int amount)
 	{
 		amount=amount*10/100;
-		System.out.println("25% of purchase:"+amount);
+		System.out.println("10% of purchase:"+amount);
 		
 	}
 	
