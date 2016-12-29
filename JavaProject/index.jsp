@@ -6,7 +6,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 </script>
-<script src="javascript/facebook.js">
+<!-- <script src="javascript/facebook.js"> -->
+<script src="javascript/jsajx.js">
 </script>
 <link href="css/facebook.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -23,38 +24,35 @@
 	 	<div id="background">
 	 	
 			<div class="row">
-				 <div id="logo">
-	 				<div  class="col-xs-12 col-md-6 col-lg-2">
-	 					 <img src="image/facebook.jpg" width="270" >
-	 				 </div>
-	  			</div>
-	 		 </div>
-	 		 </div>
-	 	 </div>
-	 </div>
-	 <div>
-		<form class="form-inline" action="submit.jsp">
-			<div class="form-group">
-				<div class="row">
-					 <div  class="col-xs-12 col-md-6 col-lg-2">
-		 				<div id="form">
-		 				<p id="unerror" class="p"></p>
-		 				<p id="pserror" class="s"></p>
-							<label  for="email"><font color="white">Email</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					
-							<label for="pwd"><font color="white">Password</font></label><br>
-     						<input  type="text" class="form-control" id="email" name="email" data-toggle="tooltip" data-placement="top" title="Email"><label id="lblemail"></label>
-      						<input type="password" class="form-control" id="pwd" name="password" data-toggle="tooltip" data-placement="top" title="Password">
-      						<button type="submit" class="btn btn-primary" id="btnlogin">Login</button><br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" >Forgotten password</a>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-1"> </div>
+			<div class="col-md-2">
+			<font color="#ffffff" size="10" face="verdana"> Facebook</font>
 			</div>
-		</form>
-	</div>
-	
-	<div class="row">
+			<div class="col-md-4"> </div>
+			<div class="col-md-1">
+			<label  for="email"><font color="white">Email</font></label>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+			<label for="pwd"><font color="white">Password</font></label><br>
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-md-7"> </div>
+			<div class="col-md-2">
+			<input  type="text" id="email" name="email" data-toggle="tooltip" data-placement="top" title="Email"  style="position: absolute;margin-top:-30px;"><label id="lblemail"></label>
+			<input type="checkbox"><a href="#"  >Keep Me logged in</a>
+			</div>
+			<div class="col-md-2">
+			<input type="password"  id="pwd" name="password" data-toggle="tooltip" data-placement="top" title="Password" style="position: absolute;margin-top:-30px;">
+			<a href="#" >Forgotten password</a>
+	 			</div>
+	 		<button type="button" class="btn btn-primary" id="btnlogin" style="position: absolute;margin-top:-35px;margin-left: -35px;">Login</button><br>
+	 			</div>
+	 			</div>
+	 			
+	 		
+<class="row">
 		<div  class="col-xs-12 col-md-6 col-lg-2">
 		 	<div id="img">
 		 		<h2>Connect with friends and the world around you on <br>facebook</h2><br> 
@@ -62,8 +60,8 @@
    			 </div>
     	</div>
     </div>
-		<div class="form-group">
-		<form name="xyz" action="submit.jsp">
+		
+		
 			<div class="row">
 				<div  class="col-xs-12 col-md-6 col-lg-2">
 		 			<div id="regform">
@@ -114,16 +112,9 @@
 							<font size="2" color="grey">By Clicking Create an account,you agree to our <a href="#">Terms </a> </font>
 							<font size="2" color="grey">and that you have read our <a href="#"> Data Policy</a>,including our cookie use</font> <br>
 							<hr>
-							<input type="submit"   value="Create an account" id="account" align="center" style="color:white; background-color:green;button-radius:6px"></td>		
+							<input type="button"   value="Create an account" id="account" align="center" style="color:white; background-color:green;button-radius:6px"></td>		
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		
-		</form>			
-</div>
-
-
 </body>
 </html>
