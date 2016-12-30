@@ -6,8 +6,11 @@ package test;
 
 public interface promotionalOffers14 
 {
-	void seasonOffer(int amount);
-	void regularoffer(int amount);
+	int seasonOffer(int amount);
+	int regularoffer(int amount);
+	
+	
+	
 }
 
 
