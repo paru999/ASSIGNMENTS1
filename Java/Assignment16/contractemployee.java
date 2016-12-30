@@ -48,6 +48,59 @@ public class contractemployee extends employee1 implements promotionalOffers14
 		return  Gender;
 	}
 	
+
+	public void setInsureAmount(int InsureAmount)
+	{
+		this.InsureAmount=InsureAmount;
+	}
+	public int GetInsureAmount()
+	{
+		return InsureAmount;
+	}
+	String EmpCode;
+	public void setecode(String EmpCode)
+	{
+		this.EmpCode=EmpCode;
+	}
+	String getecode() {
+		
+		
+		return  EmpCode;
+	}
+	public void setemi(int totalEMI)
+	{
+		this.TotalEMI=totalEMI;
+		
+	}
+	public int getemi()
+	{
+		return TotalEMI;
+	}
+	
+	void registerInsurance() 
+	{
+		String empcode="E100";
+		InsuranceNo="INS_"+getecode()+"670";
+		int InsureAmount=5000;
+	System.out.println("InsuranceNo:"+InsuranceNo);
+		System.out.println("insureAmount:"+GetInsureAmount());
+		
+	}
+	void PayEMI()
+	{
+		int emi;
+		emi= GetInsureAmount()*8/100;
+		int PayEMI=emi+getemi();
+		System.out.println("PayEMI:"+PayEMI);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 	public int calculateSalary()
 	{
 		return(Salary-(PF+Gratuity));
@@ -62,19 +115,24 @@ public class contractemployee extends employee1 implements promotionalOffers14
 		
 	}
 	@Override
-	public void seasonOffer(int totalPurchaseAmount)
+	public int seasonOffer(int totalPurchaseAmount)
 	{
+		return totalPurchaseAmount;
 
-		totalPurchaseAmount=totalPurchaseAmount-totalPurchaseAmount*15/100;
-		System.out.println("15% of purchase:"+totalPurchaseAmount);
+		//totalPurchaseAmount=totalPurchaseAmount-totalPurchaseAmount*15/100;
+		//System.out.println("15% of purchase:"+totalPurchaseAmount);
 		
 		
 	}
 	@Override
-	public void regularoffer(int amount) 
+	public int regularoffer(int amount) 
 	{
-		amount=amount-amount*8/100;
-		System.out.println("8% of purchase:"+amount);
+		return amount;
+		//amount=amount-amount*8/100;
+		//System.out.println("8% of purchase:"+amount);
 		
 	}
+	
+	
+	
 }
